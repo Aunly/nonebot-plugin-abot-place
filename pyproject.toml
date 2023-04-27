@@ -1,0 +1,37 @@
+[tool.pdm]
+
+[project]
+name = "nonebot-plugin-abot-place"
+
+version = "0.1.0"
+
+description = ""
+authors = [
+    {name = "djkcyl", email = "cyl@cyllive.cn"},
+    {name = "Well404", email = "well_404@outlook.com"},
+]
+dependencies = [
+    "nonebot-adapter-onebot>=2.2.2",
+    "pillow>=9.5.0",
+]
+requires-python = ">=3.8,<4.0"
+readme = "README.md"
+license = {text = "MIT"}
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "black>=23.3.0",
+    "nonebot-plugin-all4one>=0.1.0a2",
+    "nonebot2[fastapi,websockets]>=2.0.0rc4",
+]
+
+[tool.black]
+line-length = 120
+target-version = ["py38", "py39", "py310", "py311"]
+include = '\.pyi?$'
+extend-exclude = '''
+'''
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
