@@ -52,6 +52,10 @@ _✨ 移植于 ABot 的画板插件，可以和所有的 bot 用户一起画画�
 
 源于 ABot 的画板插件
 
+![image](https://user-images.githubusercontent.com/59153990/235223489-c5dfa522-adaf-4e1e-af40-45e68733a4e2.png)
+
+> 图片来自 https://web.archive.org/web/20170417154453/https://redditblog.com/2017/04/13/how-we-built-rplace/
+
 ## 💿 安装
 
 <details>
