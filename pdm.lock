@@ -483,7 +483,7 @@ summary = "Backport of pathlib-compatible object wrapper for zip files"
 [metadata]
 lock_version = "4.2"
 groups = ["default", "dev"]
-content_hash = "sha256:9af3fad459a5cfb5a158d90276da5c68125c4c27fe7ed9124d0a61a7e5c15270"
+content_hash = "sha256:3238f784476da952eb3a52ed7bb309503540beef3fb1bbabee86136a91c05dd4"
 
 [metadata.files]
 "aiosqlite 0.19.0" = [

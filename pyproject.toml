@@ -3,7 +3,7 @@
 [project]
 name = "nonebot-plugin-abot-place"
 
-version = "0.1.0post1"
+version = "0.1.0post2"
 
 description = ""
 authors = [
@@ -15,6 +15,7 @@ dependencies = [
     "pillow>=9.5.0",
     "SQLAlchemy>=2.0.11",
     "importlib-metadata>=6.6.0",
+    "nonebot-plugin-localstore>=0.4.1",
 ]
 requires-python = ">=3.8,<4.0"
 readme = "README.md"
