@@ -3,7 +3,7 @@ import asyncio
 from typing import Dict, Optional, Sequence
 
 from nonebot import require
-from sqlalchemy.ext.asyncio import AsyncEngine, AsyncSession, async_sessionmaker, create_async_engine
+from sqlalchemy.ext.asyncio import AsyncEngine, async_sessionmaker, create_async_engine
 from sqlalchemy.future import select
 from sqlalchemy.orm import DeclarativeBase, Mapped, mapped_column
 
@@ -54,7 +54,7 @@ class DB:
         pixel_x: int,
         pixel_y: int,
     ):
-        session = await cls.get_session()
+        session = await cls.get_session(expire_on_commit=False)
         old_pixel = (
             await session.execute(
                 select(PlaceHistory)
@@ -80,8 +80,9 @@ class DB:
             pixel_y=pixel_y,
         )
         session.add(new_pixel)
-        id_ = new_pixel.id
         await session.commit()
+        id_ = new_pixel.id
+        await session.close()
 
         return id_
 
