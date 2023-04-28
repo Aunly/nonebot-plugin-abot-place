@@ -8,7 +8,7 @@
 
 # nonebot-plugin-abot-place
 
-_✨ 多功能的B站视频解析工具 ✨_
+_✨ 移植于 ABot 的画板插件，可以和所有的 bot 用户一起画画！ ✨_
 
 <a href="./LICENSE">
     <img src="https://img.shields.io/github/license/Aunly/nonebot-plugin-abot-place.svg" alt="license">
