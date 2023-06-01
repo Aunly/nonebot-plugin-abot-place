@@ -7,11 +7,26 @@ from nonebot.params import Depends, ShellCommandArgs
 from nonebot.plugin import on_command, on_shell_command
 from nonebot.rule import ArgumentParser, Namespace
 from nonebot.typing import T_State
+from nonebot.plugin import PluginMetadata
 
+from .config import plugin_config,__version__
 from .database import DB
 from .draw import color_plant_img, draw_pixel, get_draw_line, zoom_merge_chunk
 from .utils import get_image, get_reply, get_sender
-from .config import plugin_config
+
+
+__plugin_meta__ = PluginMetadata(
+    name="nonebot-plugin-abot-place",
+    description="移植于 ABot 的画板插件，可以和所有的 bot 用户一起画画！",
+    usage="指令：查看画板、查看色板、画板作画\n详细说明请查看项目主页",
+    homepage="https://github.com/Aunly/nonebot-plugin-abot-place",
+    supported_adapters={"~onebot.v11", "~onebot.v12"},
+    extra={
+        "author": "djkcyl & Well404",
+        "version": __version__,
+        "priority": 1,
+    },
+)
 
 parser = ArgumentParser()
 parser.add_argument("numbers", type=int, nargs="*")

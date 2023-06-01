@@ -3,9 +3,9 @@
 [project]
 name = "nonebot-plugin-abot-place"
 
-version = "0.1.0post2"
+version = "0.1.0post3"
 
-description = ""
+description = "移植于 ABot 的画板插件，可以和所有的 bot 用户一起画画！"
 authors = [
     {name = "djkcyl", email = "cyl@cyllive.cn"},
     {name = "Well404", email = "well_404@outlook.com"},
@@ -16,6 +16,7 @@ dependencies = [
     "SQLAlchemy>=2.0.11",
     "importlib-metadata>=6.6.0",
     "nonebot-plugin-localstore>=0.4.1",
+    "nonebot2>=2.0.0",
 ]
 requires-python = ">=3.8,<4.0"
 readme = "README.md"

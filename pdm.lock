@@ -262,11 +262,11 @@ dependencies = [
 
 [[package]]
 name = "nonebot2"
-version = "2.0.0rc4"
+version = "2.0.0"
 requires_python = ">=3.8,<4.0"
 summary = "An asynchronous python bot framework."
 dependencies = [
-    "loguru<0.7.0,>=0.6.0",
+    "loguru<1.0.0,>=0.6.0",
     "pydantic[dotenv]<2.0.0,>=1.10.0",
     "pygtrie<3.0.0,>=2.4.1",
     "tomli<3.0.0,>=2.0.1; python_version < \"3.11\"",
@@ -276,26 +276,26 @@ dependencies = [
 
 [[package]]
 name = "nonebot2"
-version = "2.0.0rc4"
+version = "2.0.0"
 extras = ["fastapi", "websockets"]
 requires_python = ">=3.8,<4.0"
 summary = "An asynchronous python bot framework."
 dependencies = [
     "fastapi<1.0.0,>=0.93.0",
-    "nonebot2==2.0.0rc4",
+    "nonebot2==2.0.0",
     "uvicorn[standard]<1.0.0,>=0.20.0",
-    "websockets<11.0,>=10.0",
+    "websockets>=10.0",
 ]
 
 [[package]]
 name = "nonebot2"
-version = "2.0.0rc4"
+version = "2.0.0"
 extras = ["httpx"]
 requires_python = ">=3.8,<4.0"
 summary = "An asynchronous python bot framework."
 dependencies = [
     "httpx[http2]<1.0.0,>=0.20.0",
-    "nonebot2==2.0.0rc4",
+    "nonebot2==2.0.0",
 ]
 
 [[package]]
@@ -482,8 +482,9 @@ summary = "Backport of pathlib-compatible object wrapper for zip files"
 
 [metadata]
 lock_version = "4.2"
+cross_platform = true
 groups = ["default", "dev"]
-content_hash = "sha256:3238f784476da952eb3a52ed7bb309503540beef3fb1bbabee86136a91c05dd4"
+content_hash = "sha256:d4ae36e85c861491c4732f33739686492226e17ca90ef8ba3fa2d614e64051c3"
 
 [metadata.files]
 "aiosqlite 0.19.0" = [
@@ -903,9 +904,9 @@ content_hash = "sha256:3238f784476da952eb3a52ed7bb309503540beef3fb1bbabee86136a9
     {url = "https://files.pythonhosted.org/packages/27/d4/c863b32d301825ae9fab59cfbe5c74817df4b19d7a3e150426c25c4d2f75/nonebot_plugin_localstore-0.4.1.tar.gz", hash = "sha256:9b6dcb98f6a4e48c5c80b2319acc2e1c424462261a210491d437f5b96abb5d67"},
     {url = "https://files.pythonhosted.org/packages/d1/06/bd1ada3f75c6a511f14dc9f2fa836cca75d3ca35b30db5c50e4ef0393bec/nonebot_plugin_localstore-0.4.1-py3-none-any.whl", hash = "sha256:dea442fcf8baa5898c15ccea761703cdde46e6fc6bb1c886261b0ab793db8193"},
 ]
-"nonebot2 2.0.0rc4" = [
-    {url = "https://files.pythonhosted.org/packages/65/54/d23c32d571eeae0330e222b072efe6aa6384a3f8a4f40ce6768992446547/nonebot2-2.0.0rc4-py3-none-any.whl", hash = "sha256:dba33955e07f962d4fc0d3841b1d5d20ed00b8eb4189f0ac608b07e193148a3b"},
-    {url = "https://files.pythonhosted.org/packages/84/1e/f0aa87695d505f35bc36756f01ab4b2a8f8544a5b004dc53219de179ff5f/nonebot2-2.0.0rc4.tar.gz", hash = "sha256:572ab5a2678155dca93ec27695a51b1c8b3ad43c3329a360e67ce11c6dd01c7d"},
+"nonebot2 2.0.0" = [
+    {url = "https://files.pythonhosted.org/packages/69/60/2c0d414ff1dd015848f28a7f63181d45838a91d406af8f8bbc595185561b/nonebot2-2.0.0.tar.gz", hash = "sha256:144c175ce100c3300d53475fc47b7a9f0a6545861ff12bdc8a1442ab12d430df"},
+    {url = "https://files.pythonhosted.org/packages/73/7b/a27cae287908fd5bebe70bd5291667b1922c0136c26c16adeadf7db32513/nonebot2-2.0.0-py3-none-any.whl", hash = "sha256:a3b0caedd52033a11f1d7c24875c3b89513a4b5014f703e0bb266e2e39a0bd30"},
 ]
 "packaging 23.1" = [
     {url = "https://files.pythonhosted.org/packages/ab/c3/57f0601a2d4fe15de7a553c00adbc901425661bf048f2a22dfc500caf121/packaging-23.1-py3-none-any.whl", hash = "sha256:994793af429502c4ea2ebf6bf664629d07c1a9fe974af92966e4b8d2df7edc61"},
